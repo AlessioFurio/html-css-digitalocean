@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
+p {
+    margin: 0;
+}
+
 /* start header*/
+
+.navbar {
+    margin-bottom: 0;
+}
+
 .navbar.navbar-default {
     background-color: #fff;
     border-bottom: none;
@@ -12,23 +21,224 @@
 
 .header-top {
     display: none;
+}
 
+.navbar.navbar-default .logo{
+    width: 172px;
+    height: 28px;
+    margin-top: 16px;
+}
+
+.navbar.navbar-default .logo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/*end header*/
+
+/*inizio jumbo*/
+
+.jumbo {
+    width: 100%;
+    background-image: url("img-jumbo.svg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.wp-jumbo {
+    height: 900px;
+}
+
+.jumbo .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-jumbo h1 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.welcome-jumbo p {
+    font-size: 24px;
+    color: #fff;
+
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 7px 15px;
+}
+
+.btn:hover {
+    color: #fff;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border-color: #0069ff;
+    color: #0069ff;
+}
+
+.btn-transparent:hover {
+    background-color: #0069ff;
+    color: #fff;
+}
+
+.btn-blue {
+    background-color: #0069ff;
+    border-color: transparent;
+    color: #fff;
+}
+
+
+/*inizio jumbo*/
+
+form {
+    background-color: #fff;
+    width: 80%;
+    border-bottom: 1px solid grey;
+    border-radius: 6px;
+    margin: auto;
+}
+
+form h3 {
+    border-radius: 6px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f3f5f9;
+    font-weight: bold;
+    color: #031b4e;
+}
+
+.container-form {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    padding: 22px;
+}
+
+.btn-form-sign {
+    width: 80%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container-button-form {
+    border-top: 1px solid #f3f5f9;
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.btn-form-google {
+    width: 65%;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-form-github {
+    width: 14%;
+    font-size: 16px;
+}
+
+.form-jumbo p {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/*fine jumbo*/
+
+/*inizio section loghi*/
+.section-loghi {
+    text-align: center;
+    background-color: #f3f5f9;
+}
+
+.section-loghi p {
+    padding: 50px 0;
+    text-align: center;
+    color: rgb(91, 105, 135);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section-loghi-bottom-link {
+    padding: 50px;
+}
+
+.section-loghi-bottom-link a {
+    color: #0069ff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*fine section loghi*/
+
+/*inizio section deploy*/
+
+.container-title-paragraph {
+    padding: 100px 0;
+    max-width: 70%;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    color: rgb(3, 27, 78);
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.paragraph-section {
+    text-align: center;
+    color: rgb(91, 105, 135);
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.mini-menu {
+    max-width: 100%;
+}
+
+.mini-menu {
+    text-align: center;
+}
+
+.mini-menu ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.mini-menu ul li a {
+    text-decoration: none;
+    color: rgba(3, 27, 78, 0.6);
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
 
+/*fine section deploy*/
 
-
-/*end header*/
 
 
 @media screen and (min-width: 768px) {
-
-    .header-top {
-        display: block;
-        width: 100%;
-        padding: 5px;
-    }
 
     .header-top::after {
         display: table;
@@ -85,21 +295,7 @@
         padding-left: 25px;
     }
 
-    .navbar.navbar-default .logo{
-        width: 172px;
-        height: 28px;
-        margin-top: 16px;
-    }
-
-    .navbar.navbar-default .logo img {
-        width: 100%;
-        height: 100%;
-        display: block;
-
-    }
-
     .nav.navbar-nav.menu {
-        margin-left: 50px;
         margin-top: 8px;
     }
 
@@ -113,33 +309,36 @@
         color: #0069ff;
     }
 
-    .nav.navbar-nav.navbar-right a {
-        padding-right: 0;
+    .mini-menu {
+        width: 30%;
     }
 
-    .btn {
-        border-radius: 5px;
-        padding: 7px 15px;
+    .mini-menu ul {
+        margin-left: 20px;
+        border-left: 3px solid rgb(229, 232, 237);
+        text-align: left;
     }
 
-    .btn:hover {
-        color: #fff;
-    }
-
-    .btn-transparent {
-        background-color: transparent;
-        border-color: #0069ff;
-        color: #0069ff;
-    }
-
-    .btn-transparent:hover {
-        background-color: #0069ff;
-        color: #fff;
-    }
-
-    .btn-blue {
-        background-color: #0069ff;
-        border-color: transparent;
-        color: #fff;
+    .mini-menu ul li {
+        display: block;
+        padding: 20px;
     }
 }
+
+    @media screen and (min-width: 1024px) {
+        .header-top {
+            display: block;
+            width: 100%;
+            padding: 5px;
+        }
+
+        .nav.navbar-nav.menu {
+            margin-left: 50px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .container-img {
+            padding: 0 50px;
+        }
+    }
