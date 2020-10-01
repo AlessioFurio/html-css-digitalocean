@@ -8,6 +8,11 @@ p {
     margin: 0;
 }
 
+.row {
+    max-width: 100%;
+    margin: auto;
+}
+
 /* start header*/
 
 .navbar {
@@ -192,6 +197,8 @@ form h3 {
 
 /*inizio section deploy*/
 
+
+
 .container-title-paragraph {
     padding: 100px 0;
     max-width: 70%;
@@ -211,6 +218,8 @@ form h3 {
     font-size: 20px;
     padding: 0 10px;
 }
+
+
 
 .mini-menu {
     max-width: 100%;
@@ -232,10 +241,179 @@ form h3 {
     font-weight: bold;
 }
 
+.grid-deploy-content{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container-deploy-content {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.title-deploy-content {
+    color: #031b4e;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.paragraph-deploy-content {
+    color: #031b4e;
+    font-size: 16px;
+}
 
 
 /*fine section deploy*/
 
+/*inizio section designed for dev*/
+
+.designed-for-dev {
+    background-color: rgb(243, 245, 249);
+}
+
+.wp-img-screenshot {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.wp-img-screenshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container-radio{
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+.container-radio input[type='radio']::after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(0, 105, 255);
+}
+
+.container-radio input[type='radio']:checked::after {
+    width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: rgb(0, 105, 255);
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+}
+
+/*fine section designed for dev*/
+
+
+/*inizio section business*/
+
+.container-business-content{
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container-business-content p {
+    padding-bottom: 10px;
+}
+
+.container-business-content a{
+    color: #0069ff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/*fine section business*/
+
+/*inizio section data center*/
+
+.data-center {
+    margin-top: 100px;
+    background:#031b4e url("https://prismic-io.s3.amazonaws.com/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg");
+    padding-bottom: 100px;
+}
+
+.data-center .section-title,
+.data-center .paragraph-section {
+    color: #fff;
+}
+
+.wp-general-table {
+    margin: auto;
+    max-width: 90%;
+}
+
+.wp-general-table::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.row-table {
+    width: 100%;
+    border-bottom: 1px solid hsla(0,0%,100%,0.2);
+    padding: 5px 0;
+}
+
+.row-table {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.sigla-citta {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.citta {
+    padding: 0 5px;
+    float: left;
+    color: #5b6987;
+    text-align: center;
+    font-size: 14px;
+}
+
+.test-speed {
+    text-align: right;
+    float: right;
+    font-size: 14px;
+}
+
+.test-speed a {
+    color: #00d7d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.test-speed a:hover {
+    color: #1633ff;
+}
+
+
+
+/*fine section data center*/
 
 
 @media screen and (min-width: 768px) {
@@ -310,7 +488,8 @@ form h3 {
     }
 
     .mini-menu {
-        width: 30%;
+        display: inline-block;
+        width: 20%;
     }
 
     .mini-menu ul {
@@ -323,6 +502,68 @@ form h3 {
         display: block;
         padding: 20px;
     }
+
+    .paragraph-section {
+        width: 70%;
+        margin: auto;
+        color: rgb(91, 105, 135);
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .grid-deploy-content {
+        max-width: 80%;
+        display: inline-block;
+        padding: 0 0;
+        text-align: left;
+    }
+
+    .container-deploy-content {
+        max-width: 50%;
+    }
+
+    .container-business-content{
+        margin: auto;
+        text-align: left;
+        padding-top: 0px;
+    }
+
+    .wp-general-table::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .table-sx {
+        width: 48%;
+        float: left;
+    }
+
+    .table-dx {
+        width: 48%;
+        float: right;
+    }
+
+    .row-table {
+        width: 100%;
+        border-bottom: 1px solid hsla(0,0%,100%,0.2);
+        padding: 8px 0;
+    }
+
+    .row-table:last-child {
+        border-bottom: none;
+    }
+
+    .row-table {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .citta {
+        padding-left: 30px;
+        padding-right: 0;
+
 }
 
     @media screen and (min-width: 1024px) {
