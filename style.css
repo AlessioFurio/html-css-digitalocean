@@ -224,40 +224,23 @@ form h3 {
     padding: 0 10px;
 }
 
-
-
-.wrapper-mini-menu-grid-deploy .container .row:first-child {
-    max-width: 100%;
-}
-
-.wrapper-mini-menu-grid-deploy .container .row:first-child {
+.list-grid-deploy {
     text-align: center;
 }
 
-.wrapper-mini-menu-grid-deploy .container .row:first-child ul li {
+.list-grid-deploy li {
     display: inline-block;
-    padding: 5px;
+    padding: 10px 0;
 }
 
-.wrapper-mini-menu-grid-deploy .container .row:first-child ul li a {
+.list-grid-deploy li a {
+    color: rgb(91, 105, 135);
     text-decoration: none;
-    color: rgba(3, 27, 78, 0.6);
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.grid-deploy-content{
-    width: 100%;
-    text-align: center;
-    padding: 50px 0;
-}
-
-.grid-deploy-content .row .col-xs-12.col-md-3 {
-    width: 100%;
-    padding-bottom: 20px;
+    font-size: 18px;
 }
 
 .title-deploy-content {
+    text-align: center;
     color: #031b4e;
     font-weight: bold;
     padding: 10px 0;
@@ -266,6 +249,10 @@ form h3 {
 .paragraph-deploy-content {
     color: #031b4e;
     font-size: 16px;
+}
+
+.wp-img-deploy-content {
+    text-align: center;
 }
 
 
@@ -516,7 +503,7 @@ form h3 {
     padding-top: 20px;
 }
 
-.container-button {
+.get-started-now .col-xs-12.col-md-6:nth-child(2) {
     padding: 20px 0;
     text-align: center;
 }
@@ -551,7 +538,7 @@ footer h4 {
     padding: 10px 0;
 }
 
-.footer-ul ul {
+.footer-ul {
     padding: 0 10px
 }
 
@@ -695,9 +682,9 @@ footer h4 {
         text-align: left;
     }
 
-    .list-grid-deploy li {
-        display: block;
-    }
+
+
+
 
     .paragraph-section {
         width: 70%;
@@ -707,16 +694,8 @@ footer h4 {
         padding: 0 10px;
     }
 
-    .grid-deploy-content {
-        max-width: 75%;
-        display: inline-block;
-        padding: 0 0;
-        text-align: left;
-    }
 
-    .grid-deploy-content .row .col-xs-12.col-md-3{
-        max-width: 50%;
-    }
+
 
     .container-business-content{
         margin: auto;
@@ -791,3 +770,6 @@ footer h4 {
             padding: 0 50px;
         }
     }
+
+
+    /*correzione sezione deploy*/
