@@ -269,6 +269,31 @@ form h3 {
     height: 100%;
     margin: auto;
     margin-bottom: 20px;
+    position: relative;
+}
+
+.wp-img-screenshot::before {
+    content: '\f061';
+    color: #000;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}
+
+.wp-img-screenshot::after {
+    content: '\f060';
+    color: #000;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
 }
 
 .wp-img-screenshot img {
@@ -442,6 +467,7 @@ form h3 {
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .container-img-slide img {
