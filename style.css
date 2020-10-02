@@ -66,14 +66,15 @@ ul {
     justify-content: center;
 }
 
-.welcome-jumbo h1 {
+.wp-jumbo .container .row h1 {
     font-size: 36px;
     color: #fff;
     font-weight: bold;
     margin-top: 100px;
+    text-align: center;
 }
 
-.welcome-jumbo p {
+.wp-jumbo .container .row p {
     font-size: 24px;
     color: #fff;
 
@@ -164,7 +165,7 @@ form h3 {
     font-size: 16px;
 }
 
-.form-jumbo p {
+.wp-jumbo .container p {
     margin-top: 10px;
     text-align: center;
     color: #fff;
@@ -225,20 +226,20 @@ form h3 {
 
 
 
-.mini-menu {
+.wrapper-mini-menu-grid-deploy .container .row:first-child {
     max-width: 100%;
 }
 
-.mini-menu {
+.wrapper-mini-menu-grid-deploy .container .row:first-child {
     text-align: center;
 }
 
-.mini-menu ul li {
+.wrapper-mini-menu-grid-deploy .container .row:first-child ul li {
     display: inline-block;
     padding: 5px;
 }
 
-.mini-menu ul li a {
+.wrapper-mini-menu-grid-deploy .container .row:first-child ul li a {
     text-decoration: none;
     color: rgba(3, 27, 78, 0.6);
     font-size: 16px;
@@ -251,7 +252,7 @@ form h3 {
     padding: 50px 0;
 }
 
-.container-deploy-content {
+.grid-deploy-content .row .col-xs-12.col-md-3 {
     width: 100%;
     padding-bottom: 20px;
 }
@@ -378,7 +379,7 @@ form h3 {
     padding: 5px 0;
 }
 
-.row-table {
+.row-table::after {
     content: '';
     display: table;
     clear: both;
@@ -683,20 +684,19 @@ footer h4 {
         color: #0069ff;
     }
 
-    .mini-menu {
-        display: inline-block;
+    .list-grid-deploy {
+
         width: 20%;
     }
 
-    .mini-menu ul {
+    .list-grid-deploy {
         margin-left: 20px;
         border-left: 3px solid rgb(229, 232, 237);
         text-align: left;
     }
 
-    .mini-menu ul li {
+    .list-grid-deploy li {
         display: block;
-        padding: 20px;
     }
 
     .paragraph-section {
@@ -708,13 +708,13 @@ footer h4 {
     }
 
     .grid-deploy-content {
-        max-width: 80%;
+        max-width: 75%;
         display: inline-block;
         padding: 0 0;
         text-align: left;
     }
 
-    .container-deploy-content {
+    .grid-deploy-content .row .col-xs-12.col-md-3{
         max-width: 50%;
     }
 
